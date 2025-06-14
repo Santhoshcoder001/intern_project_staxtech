@@ -1,5 +1,7 @@
 # intern_project_staxtech
 
+Project 1
+
 # 🔐 GUI-Based Password Generator
 
 A customizable, GUI-based password generator built using Python and Tkinter, developed as part of my internship at **Staxtech**. This tool enables users to generate secure, random passwords with fine-grained control over character types and length.
