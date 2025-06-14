@@ -68,6 +68,55 @@ User Input:
 
     W$z9qK2@pM1!
 
+PROJECT 2
+
+# 💱 Currency Converter - Python Tkinter GUI
+
+A simple and intuitive Currency Converter built using Python and Tkinter that converts amounts between Indian Rupee (INR) and major world currencies using static exchange rates (as of June 14, 2025). This is ideal for learning GUI development and basic financial computations.
+
+---
+
+## 🚀 Features
+
+- Convert amounts between INR and:
+  - USD (US Dollar)
+  - EUR (Euro)
+  - GBP (British Pound)
+  - AUD (Australian Dollar)
+  - CAD (Canadian Dollar)
+  - SGD (Singapore Dollar)
+  - CHF (Swiss Franc)
+  - MYR (Malaysian Ringgit)
+  - JPY (Japanese Yen)
+  - CNY (Chinese Yuan Renminbi)
+- Clean and responsive UI using Tkinter
+- Handles invalid inputs gracefully
+
+---
+
+## 🖥️ GUI Preview
+
+![WhatsApp Image 2025-06-14 at 06 52 53_02919475](https://github.com/user-attachments/assets/68706fa9-c272-46dc-9e9f-bc986012449f)
+![WhatsApp Image 2025-06-14 at 06 53 09_23896669](https://github.com/user-attachments/assets/1c13262b-36da-4f16-8208-1076d94ad9f3)
+![WhatsApp Image 2025-06-14 at 06 53 24_296f2e16](https://github.com/user-attachments/assets/82b7e667-0192-4e9c-ba98-a8e1870af076)
+![WhatsApp Image 2025-06-14 at 06 53 59_26d32b14](https://github.com/user-attachments/assets/fb80a18e-5f04-4881-924c-15972d144544)
+
+---
+
+## 🛠️ Technologies Used
+
+- **Language:** Python 3.x
+- **GUI Toolkit:** Tkinter (built-in)
+- No external packages required
+
+---
+
+
+
+
+
+
+
 Author
 Developed by Santhosh K.R. during internship at StaxTech.
 
