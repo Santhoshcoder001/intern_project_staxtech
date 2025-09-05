@@ -117,6 +117,166 @@ A simple and intuitive Currency Converter built using Python and Tkinter that co
 
 
 
+PROJECT 3
+
+# 📚 Thirukkural Tamil to English Translator with NLP
+
+A sophisticated command-line application that provides Tamil to English translations of Thirukkural verses using Natural Language Processing techniques. Built as part of the internship project at **Staxtech**, this tool offers intelligent search capabilities and comprehensive access to the ancient Tamil wisdom of Thiruvalluvar.
+
+---
+
+## 🌟 Features
+
+- **Intelligent Search**: Advanced NLP-powered search using difflib for text similarity and fuzzy matching
+- **Multiple Search Methods**:
+  - Search by meaning/keywords (e.g., "friendship", "love", "virtue")
+  - Search by specific kural number (1-1330)
+  - Search by chapter names
+  - Search by themes
+- **Rich Content**: 
+  - Original Tamil text
+  - English translations
+  - Detailed meanings and explanations
+  - Transliteration (Tamil to English phonetics)
+  - Thematic categorization
+- **Interactive CLI**: User-friendly command-line interface with multiple interaction modes
+- **Relevance Scoring**: Smart ranking of search results based on relevance
+- **Random Inspiration**: Get random kurals for daily wisdom
+
+---
+
+## 🖥️ Usage Examples
+
+### Command Line Mode:
+```bash
+# Get help
+python thirukkural_translator.py help
+
+# Search by keyword
+python thirukkural_translator.py search friendship
+
+# Get specific kural
+python thirukkural_translator.py number 421
+
+# Get random kural
+python thirukkural_translator.py random
+```
+
+### Interactive Mode:
+```bash
+python thirukkural_translator.py
+
+thirukkural> search love
+thirukkural> number 391
+thirukkural> theme virtue
+thirukkural> random
+thirukkural> chapters
+thirukkural> quit
+```
+
+---
+
+## 🧠 NLP Techniques Used
+
+1. **Text Similarity**: Using `difflib.SequenceMatcher` for overall text similarity
+2. **Fuzzy Matching**: `difflib.get_close_matches` for approximate word matching
+3. **Word Indexing**: Pre-built indices for faster theme and keyword searches
+4. **Relevance Scoring**: Multi-factor scoring algorithm considering:
+   - Exact phrase matches
+   - Individual word matches
+   - Fuzzy similarity scores
+   - Theme relevance
+   - Word frequency
+
+---
+
+## 📋 Available Commands
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `search <query>` | Search by meaning/keywords | `search friendship` |
+| `number <num>` | Get specific kural by number | `number 421` |
+| `chapter <name>` | Search by chapter name | `chapter "Praise of God"` |
+| `theme <theme>` | Search by theme | `theme love` |
+| `random` | Display random kural | `random` |
+| `chapters` | List all chapters | `chapters` |
+| `themes` | List all themes | `themes` |
+| `stats` | Show database statistics | `stats` |
+| `help` | Show help information | `help` |
+| `quit/exit` | Exit the application | `quit` |
+
+---
+
+## 🛠️ Technologies Used
+
+- **Language**: Python 3.x
+- **NLP Libraries**: 
+  - `difflib` (built-in) for text similarity and fuzzy matching
+  - `re` (built-in) for regular expressions and text processing
+  - `unicodedata` (built-in) for Unicode text handling
+- **Data Structures**: Optimized indices for fast searching
+- **CLI Interface**: Interactive command-line experience
+
+---
+
+## 📖 About Thirukkural
+
+திருக்குறள் (Thirukkural) is a classical Tamil sangam literature consisting of 1330 short couplets (kurals) written by the ancient Tamil poet **Thiruvalluvar** around 2000 years ago. The work is divided into three main sections:
+
+1. **Aram** (Virtue/Righteousness) - 38 chapters
+2. **Porul** (Wealth/Politics) - 70 chapters  
+3. **Inbam** (Love/Pleasure) - 25 chapters
+
+Each kural contains profound wisdom about ethics, governance, economics, love, and human nature, making it one of the world's greatest works on ethics and morality.
+
+---
+
+## 🚀 Installation & Running
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Santhoshcoder001/intern_project_staxtech.git
+   cd intern_project_staxtech
+   ```
+
+2. **Run the Application**:
+   ```bash
+   # Interactive mode
+   python thirukkural_translator.py
+   
+   # Command line mode
+   python thirukkural_translator.py search wisdom
+   ```
+
+---
+
+## 📊 Sample Output
+
+```
+============================================================
+Kural 421 - Chapter: Help in Trouble (#43)
+============================================================
+
+Tamil:
+உடுக்கை இழந்தவன் கைபோல ஆங்கே
+இடுக்கண் களைவான் நட்பு.
+
+Transliteration:
+Udukkai izhandavan kaipol aangke
+Idukkan kalaivaann natpu.
+
+English Translation:
+Like a hand when the dress slips off,
+Friendship should promptly help in times of distress.
+
+Meaning:
+True friendship acts as quickly as a hand that adjusts a slipping garment.
+
+Themes: friendship help loyalty
+```
+
+---
+
 Author
 Developed by Santhosh K.R. during internship at StaxTech.
 
