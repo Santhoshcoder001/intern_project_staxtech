@@ -56,8 +56,11 @@ def generate_password():
         final_password = build_password(length, use_uppercase, use_lowercase, use_digits, use_specials)
         password_output.delete(0, tk.END)
         password_output.insert(0, final_password)
-    except ValueError:
-        messagebox.showerror("Input Error", "Please enter a valid length and character selection.")
+    except ValueError as exc:
+        error_message = str(exc)
+        if error_message.startswith("invalid literal for int()"):
+            error_message = "Password length must be a number."
+        messagebox.showerror("Input Error", error_message)
 
 def copy_to_clipboard():
     password = password_output.get()
